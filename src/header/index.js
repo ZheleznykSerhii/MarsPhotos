@@ -46,9 +46,13 @@ const Header = ({
             type="number"
             onChange={handleSol}
             value={solValue}
+            variant="filled"
             label={`The last available is ${сuriosityManifest.max_sol}`}
             InputLabelProps={{
               style: { color: '#000000' },
+            }}
+            InputProps={{
+              style: { backgroundColor: '#fff' },
             }}
           ></TextField>
         </div>

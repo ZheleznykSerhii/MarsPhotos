@@ -28,7 +28,7 @@
  }
 
  .header_card {
-    background-color: rgba(0,0,0,0.1);
+    background-color: rgb(255, 255, 255);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -72,7 +72,7 @@
 
 
 .solHeader {
-    margin: 10px
+    margin: 5px
     
 }
 
