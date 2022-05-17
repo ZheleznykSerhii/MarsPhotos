@@ -34,13 +34,11 @@ const HeaderPhone = ({
         </span>
         <div className={style.textField}>
           <input
-            required
             name="sol"
             type="number"
             onChange={handleSol}
             value={solValue}
             className={style.inputNumber}
-            InputProps={{ style: { fontSize: 12 } }}
           ></input>
         </div>
       </div>

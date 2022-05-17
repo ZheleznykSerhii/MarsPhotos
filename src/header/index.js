@@ -14,12 +14,6 @@ const Header = ({
   currentData,
   unique,
 }) => {
-  const styles = {
-    floatingLabelFocusStyle: {
-      color: 'black',
-    },
-  }
-
   return (
     <div className={!solValue ? style.header : style.header_card}>
       <div className={style.inputGroup}>
