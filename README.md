@@ -20,9 +20,6 @@ Using material design, please make sure that the website is pretty as much as po
 4. Pagination Must have - done ;
 5. Error handling Nice to have - for API didn`t do it, but created component for bad requests;
 6. CSS preprocessor Nice to have - no;
-
-
-Outcome
 7. Source code Must have - done;
 8. Instruction “How to run a code” Must have - it's here;
 9. Link to a hosted website Nice to have https://zheleznykserhii.github.io/MarsPhotos/
