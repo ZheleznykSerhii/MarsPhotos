@@ -29,8 +29,6 @@ const MobileVersion = () => {
   })
   const unique = [...new Set(cameras)]
 
-  console.log(unique)
-
   const handleChange = (e) => {
     const data = e.target.value
     setRoverValue(data)
@@ -100,13 +98,19 @@ const MobileVersion = () => {
   }, [roverValue, solValue, page])
 
   useEffect(() => {
+    isLoader(true)
     setCamera('All')
     setCurrentData('All')
+    isLoader(false)
   }, [roverValue, solValue])
 
   useEffect(() => {
     setSolValue('')
   }, [roverValue])
+
+  useEffect(() => {
+    setPage(1)
+  }, [currentData])
 
   return (
     <>
@@ -123,7 +127,7 @@ const MobileVersion = () => {
 
       {loader ? (
         <Loader />
-      ) : pagination.length > 0 ? (
+      ) : cards.length > 0 ? (
         <PhotoGalleryMobile
           posts={cards}
           pagination={pagination}

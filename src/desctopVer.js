@@ -29,8 +29,6 @@ const DesctopVersion = () => {
   })
   const unique = [...new Set(cameras)]
 
-  console.log(unique)
-
   const handleChange = (e) => {
     const data = e.target.value
     setRoverValue(data)
@@ -109,6 +107,10 @@ const DesctopVersion = () => {
   useEffect(() => {
     setSolValue('')
   }, [roverValue])
+
+  useEffect(() => {
+    setPage(1)
+  }, [currentData])
 
   return (
     <>

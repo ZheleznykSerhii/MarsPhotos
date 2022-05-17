@@ -14,8 +14,14 @@ const Header = ({
   currentData,
   unique,
 }) => {
+  const styles = {
+    floatingLabelFocusStyle: {
+      color: 'black',
+    },
+  }
+
   return (
-    <div className={style.header}>
+    <div className={!solValue ? style.header : style.header_card}>
       <div className={style.inputGroup}>
         <span>Rover: </span>
         <Select
@@ -41,6 +47,9 @@ const Header = ({
             onChange={handleSol}
             value={solValue}
             label={`The last available is ${сuriosityManifest.max_sol}`}
+            InputLabelProps={{
+              style: { color: '#000000' },
+            }}
           ></TextField>
         </div>
       </div>

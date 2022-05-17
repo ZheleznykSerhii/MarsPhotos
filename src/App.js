@@ -1,4 +1,3 @@
-// import DesctopVersion from './desctopVer'
 import React, { Suspense, useEffect, useState } from 'react'
 import Loader from './loader'
 
