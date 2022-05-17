@@ -135,7 +135,11 @@ const DesctopVersion = () => {
           setPage={setPage}
         />
       ) : solValue ? (
-        <DataNotFound />
+        <DataNotFound
+          roverValue={roverValue}
+          solValue={solValue}
+          сuriosityManifest={сuriosityManifest}
+        />
       ) : (
         <StartPage />
       )}

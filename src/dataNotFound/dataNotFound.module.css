@@ -13,3 +13,22 @@
     background-repeat: no-repeat
     
 }
+
+.head {
+    font-weight: 600;
+    font-size: 32px;
+    padding-left: 100px;   
+    padding-right: 100px;  
+    margin: 0px; 
+}
+
+.reason {
+    font-weight: 600;
+    font-size: 20px;
+    padding-left: 100px;   
+    padding-right: 100px; 
+}
+
+p::first-letter {
+    text-transform: uppercase;
+  }

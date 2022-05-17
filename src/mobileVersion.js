@@ -135,7 +135,11 @@ const MobileVersion = () => {
           setPage={setPage}
         />
       ) : solValue ? (
-        <DataNotFoundPhone />
+        <DataNotFoundPhone
+          roverValue={roverValue}
+          solValue={solValue}
+          сuriosityManifest={сuriosityManifest}
+        />
       ) : (
         <StartPageMobile />
       )}
