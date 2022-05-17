@@ -1,0 +1,19 @@
+.container {
+    height: 100vh ;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 1);
+    color: rgba(255, 255, 255, 1);
+    padding-top: 160px;
+    
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/OSIRIS_Mars_true_color.jpg/1024px-OSIRIS_Mars_true_color.jpg');
+    background-repeat: no-repeat
+    
+    
+}
+
+.text {
+   padding: 10px;
+   text-align: center;
+    
+    
+}

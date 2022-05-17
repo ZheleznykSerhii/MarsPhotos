@@ -1,0 +1,51 @@
+.header {
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    width: 100vw;
+    z-index: 11;
+    box-shadow: 0 0 5px rgba(0,0,0,0.5);
+    color: white
+    
+}
+
+.input {
+    width: 200px;
+    height: 30px;
+    margin: 10px;  
+    padding: 0  ;
+    background-color: rgb(222, 222, 222);
+}
+
+.inputGroup {
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+  margin-left: 10px;
+  margin-right: 10px;
+ 
+  
+   
+}
+
+.textField {
+    margin: 10px;
+    width: 200px;
+    border-radius: 6px;
+    overflow: hidden;
+   
+   
+}
+
+.inputNumber {
+   width: 198px;
+    height: 30px;
+    padding-left: 15px;
+    margin: 0;
+    background-color: rgb(222, 222, 222);
+    border: 0.1px solid rgb(90, 87, 87);
+    color: rgb(66, 61, 61);
+    font-size: 16px;
+    
+}

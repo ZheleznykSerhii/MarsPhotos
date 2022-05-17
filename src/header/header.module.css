@@ -1,0 +1,69 @@
+.header {
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    width: 100vw;
+    flex-wrap: nowrap;
+    z-index: 11;
+    box-shadow: 0 0 5px rgba(0,0,0,0.5);
+    padding:30px   
+    
+}
+
+@media (max-width: 1279px) { 
+    .header {      
+        padding: 0px    ;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+        height: 250px;
+        background-color: rgb(255, 255, 255);
+        color: rgb(0, 0, 0);
+            }
+      
+ }
+ 
+.input {
+    position: relative;
+    right: 0;
+    width: 300px;
+    margin: 5px;    
+    font-size: 16px;
+    border-radius: 4px;
+    
+}
+
+@media (max-width: 1279px) { 
+    .input {
+        margin: 0, auto;
+      
+        
+    }    
+    
+ }
+
+
+.inputGroup {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;  
+    margin:10px
+   
+}
+
+
+.solHeader {
+    margin: 10px
+    
+}
+
+@media (max-width: 1279px) { 
+        .solHeader {
+       margin-right: 25px;
+        
+    }
+    
+ }
+

@@ -1,25 +1,43 @@
-import logo from './logo.svg';
-import './App.css';
+// import DesctopVersion from './desctopVer'
+import React, { Suspense, useEffect, useState } from 'react'
+import Loader from './loader'
 
-function App() {
+const DesctopVersion = React.lazy(() => import('./desctopVer'))
+const MobileVersion = React.lazy(() => import('./mobileVersion'))
+
+const App = () => {
+  const [screenWidth, setScreenWidth] = useState()
+  useEffect(() => {
+    setScreenWidth(window.innerWidth)
+  }, [])
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
+    <>
+      {screenWidth < 768 ? (
+        <Suspense
+          fallback={
+            <>
+              <div>Loading mobile version...</div>
+              <Loader />
+            </>
+          }
         >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+          <MobileVersion />
+        </Suspense>
+      ) : (
+        <Suspense
+          fallback={
+            <>
+              <div>Loading desctop version...</div>
+              <Loader />
+            </>
+          }
+        >
+          <DesctopVersion />
+        </Suspense>
+      )}
+    </>
+  )
 }
 
-export default App;
+export default App
