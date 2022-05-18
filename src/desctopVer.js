@@ -58,9 +58,8 @@ const DesctopVersion = () => {
 
   useEffect(() => {
     const fetchData = async () => {
-      await allPhotosPerDay(roverValue, solValue, camera).then((data) =>
-        setPagination(data)
-      )
+      const data = await allPhotosPerDay(roverValue, solValue, camera)
+      setPagination(data)
       isLoader(false)
     }
     isLoader(true)
@@ -70,8 +69,8 @@ const DesctopVersion = () => {
   useEffect(() => {
     const fetchData = async () => {
       const data = await ManifestOfRover(roverValue)
-      isLoader(false)
       setCuriosityManifestosts(data)
+      isLoader(false)
     }
     isLoader(true)
     fetchData()
