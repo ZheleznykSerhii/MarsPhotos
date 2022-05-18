@@ -5,9 +5,11 @@ https://zheleznykserhii.github.io/MarsPhotos/
 How to take and run a code:
 
 1. git clone https://github.com/ZheleznykSerhii/MarsPhotos.git
-2. git checkout master
-3. npm install
-4. npm start
+2. cd MarsPhotos
+3. git checkout master
+4. npm install
+5. npm install axios
+6. npm start
 
 The task was:
 
