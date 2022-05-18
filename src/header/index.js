@@ -41,7 +41,10 @@ const Header = ({
             onChange={handleSol}
             value={solValue}
             variant="filled"
-            label={`The last available is ${сuriosityManifest.max_sol}`}
+            label={
+              сuriosityManifest.max_sol &&
+              `The last available is ${сuriosityManifest.max_sol}`
+            }
             InputLabelProps={{
               style: { color: '#000000' },
             }}
